@@ -37,7 +37,7 @@ public class PetStoreQuery {
         // Création d'une PetStore
         PetStore store1 = new PetStore("Animaux & Co", "Desmond",adress1);
 
-        PetStore store2 = new PetStore("PetWorld", "Hilary", adress1);
+        PetStore store2 = new PetStore("PetWorld", "Hilary", adress3);
 
         PetStore store3 = new PetStore("PetCenter", "Peter",adress2);
 
@@ -84,9 +84,16 @@ public class PetStoreQuery {
 
 
 
-//        // Requête pour extraite tous les animaux d’une animalerie
-//
+//        // Requête pour extraite tous les animaux d’un store: store1
+        System.out.println("\n--- Animaux dans la boutique ---");
 
+        Set<Animal> animals = new HashSet<>(
+                em.createQuery("SELECT a FROM Animal a WHERE a.petStore.id = :id", Animal.class)
+                .setParameter("id", store1.getId())
+                .getResultList());
+
+        animals.forEach(a ->
+                System.out.println(a.getClass().getSimpleName() + " - " + a.getColor()));
 
 
         et.commit();
