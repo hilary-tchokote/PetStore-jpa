@@ -24,5 +24,6 @@ Ce mini projet est une application Java basée sur **Hibernate** et **JPA**, rep
 1. Ouvrez le projet dans l'IDE IntelliJ
 2. Créez une base de données dans MariDB nommé petstore
 3. Exécutez la classe PetStoreQuery du package controller
-  
+---
+
 ## Thanks for Visiting 😊
