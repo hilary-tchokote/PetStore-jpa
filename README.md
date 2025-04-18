@@ -1,6 +1,6 @@
 # 🐾 PetStore - Projet Spring Data JPA
 
-# Name : Hilary TCHOKOTE
+## Name : Hilary TCHOKOTE
 
 ## Description
 
