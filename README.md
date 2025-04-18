@@ -13,8 +13,16 @@ Ce mini projet est une application Java basée sur **Hibernate** et **JPA**, rep
 - Des requêtes JPQL et des DML(Insertion) via **EntityManager**
 ---
 
-## 🗃️ Les Packages du projet
+## Les Packages du projet
 
 - src/main/java/controller : contient le fichier **PetStoreQuery** pour les insertions et les requêtes
 
 - src/main/java/model : contient les **Entités** du projet
+---
+
+## Exécution
+1. Ouvrez le projet dans l'IDE IntelliJ
+2. Créez une base de données dans MariDB nommé petstore
+3. Exécutez la classe PetStoreQuery du package controller
+  
+## Thanks for Visiting 😊
