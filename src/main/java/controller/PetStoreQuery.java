@@ -92,9 +92,10 @@ public class PetStoreQuery {
                 .setParameter("id", store1.getId())
                 .getResultList());
 
-        animals.forEach(a ->
-                System.out.println(a.getClass().getSimpleName() + " - " + a.getColor()));
 
+        for (Animal a : animals) {
+                System.out.println(a.getClass().getSimpleName() + " - " + a.getColor());
+        }
 
         et.commit();
 
